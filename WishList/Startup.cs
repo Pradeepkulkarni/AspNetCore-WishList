@@ -30,6 +30,7 @@ namespace WishList
             {
                 app.UseDeveloperExceptionPage();
             }
+            else { app.UseExceptionHandler(errorHandlingPath: "/Home/Error"); }
 
             app.UseMvcWithDefaultRoute();
 
